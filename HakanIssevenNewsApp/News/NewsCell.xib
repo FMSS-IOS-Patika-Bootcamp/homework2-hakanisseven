@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NewsCell" customModule="HakanIssevenNewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ladybug.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ovt-Lh-r6s">
+                        <rect key="frame" x="0.0" y="-1" width="414" height="176"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="258" id="TQa-1r-wpf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJn-M4-sS2">
+                        <rect key="frame" x="0.0" y="298" width="414" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nJn-M4-sS2" secondAttribute="trailing" id="64C-Hc-ZVj"/>
+                <constraint firstItem="ovt-Lh-r6s" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Fca-UQ-YiT"/>
+                <constraint firstItem="nJn-M4-sS2" firstAttribute="top" secondItem="ovt-Lh-r6s" secondAttribute="bottom" constant="40" id="VfP-T3-s0N"/>
+                <constraint firstAttribute="trailing" secondItem="ovt-Lh-r6s" secondAttribute="trailing" id="nwV-Oj-i8K"/>
+                <constraint firstItem="nJn-M4-sS2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p4B-1J-BFP"/>
+                <constraint firstItem="ovt-Lh-r6s" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="w28-gl-pzy"/>
+            </constraints>
+            <size key="customSize" width="613" height="508"/>
+            <connections>
+                <outlet property="NewsCellLabel" destination="nJn-M4-sS2" id="xWy-H2-iWx"/>
+                <outlet property="imageView" destination="ovt-Lh-r6s" id="j5B-T8-kF4"/>
+            </connections>
+            <point key="canvasLocation" x="544.92753623188412" y="249.10714285714283"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ladybug.fill" catalog="system" width="128" height="128"/>
+    </resources>
+</document>
